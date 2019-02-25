@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from unittest.mock import MagicMock
-from lambda import handler
+from app import handler
 
 
 if __name__ == '__main__':
