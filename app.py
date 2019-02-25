@@ -8,7 +8,7 @@ def handler(event, context):
         if tags.get('DieWithDignity') != 'True':
             return
 
-        attributes = {f'tag_{key}': value for key, value in tags.items()}
+        attributes = {f'{key}': value for key, value in tags.items()}
         attributes['instance_id'] = instance_id
 
     except Exception as ex:
